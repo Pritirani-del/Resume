@@ -76,6 +76,8 @@
 
         .right {
             width: 70%;
+            text-align: right;
+            margin-right:2% ;
         }
 
         img {
@@ -167,7 +169,6 @@
         }
 
         .grid1 .item1 {
-            background: url("https://dwglogo.com/wp-content/uploads/2019/03/1200px-genpact_logo.png");
             padding: 20px;
             background-color: #e6f7ff;
             background-size: cover;
@@ -296,19 +297,69 @@
         .purple {
             color: blueviolet;
         }
+
         button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 4px;
-}
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
 
-button:hover {
-  background-color: #0056b3;
-}
+        button:hover {
+            background-color: #0056b3;
+        }
 
+        /* Dropdown Button */
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        .show {
+            display: block;
+        }
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -332,7 +383,7 @@ button:hover {
                 display: block;
             }
 
-            .left {
+            .left { 
                 width: 100%;
                 text-align: center;
             }
@@ -348,7 +399,7 @@ button:hover {
 <body>
     <!-- Navigation -->
     <nav>
-        <div class="left">Shashikant's Portfolio</div>
+        <div class="left" style="font-size: 2rem;">Shashikant's Portfolio</div>
         <div class="right">
             <a href="#about">About</a>
             <a href="#experience">Experience</a>
@@ -356,9 +407,9 @@ button:hover {
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
             <button onclick="window.location.href='IndeFx.htm';">
-                 🌙 Dark Mode
-              </button>
-              
+                🌙 Dark Mode
+            </button>
+
         </div>
     </nav>
 
@@ -386,7 +437,27 @@ button:hover {
             </div>
         </div>
     </section>
-
+    <section id="Professional_Summary">
+        <div class="container">
+            <h2>Professional summmary</h2>
+            <div class="card">
+                <p>
+                <ul style="margin: 20px;" type="circle">
+                    <li> Key expertise Includes Transactional Quality (Policy administration)/ Policy Owner’s Services &
+                        Banking Loans and procurement (PR to PO).</li>
+                    <li> Sales Compensations and licensing for healthcare, and part of loan audit for the Banking loan
+                        process.</li>
+                    <li> Sharing time-to-time feedback with the user.
+                        Coordination with different departments like renewals, finance, and underwriting for optimizing
+                        the TAT in catering to financial and non-financial requests through E-mails.</li>
+                    <li>Strong domain knowledge in Life Insurance. Good understanding of basic principles of Policy
+                        Servicing, New Business, Claims, Renewal, Underwriting, Finance, TDS, NAV, ULIP, Endowment,
+                        Term, Health, Annuity & Pension Product.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
     <!-- Experience Section -->
     <section id="experience" style="background-color: #f0f8ff;">
         <div class="container">
@@ -451,8 +522,10 @@ button:hover {
                     <div class="icon">💻</div>
                     <h3>Technical Tools</h3>
                     <ul type="circle" style="text-align: left; padding-left:20px;">
-                        <li>MS Word, Excel, PowerPoint</li>
+                        <li>Microsoft Office</li>
                         <li>MySQL</li>
+                        <li>Ariba, PO Wizard tool,</li>
+                        <li>SBA PPP, EWS, IBS, ASCS</li>
                         <li>Oracle SQL Developer</li>
                         <li>Ingenium, Omnidocs</li>
                         <li>MyFlow, MyMoney</li>
@@ -473,10 +546,18 @@ button:hover {
         <div class="container">
             <h2>Contact Me</h2>
             <div class="card">
+
                 <p>Email: <a href="mailto:shasb2016.sb@gmail.com">shasb2016.sb@gmail.com</a></p>
                 <p>Phone: +91 95609 41942</p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/shashikanta-barik-936b37232/" target="_blank">View
                         Profile</a></p>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Resume</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="Shashikanta_Barik_Non-Voice_CV-1 (1).pdf">View CV</a>
+                        <a href="Shashikanta_Barik_Non-Voice_CV-1 (1).pdf" download="">Download CV</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -504,6 +585,27 @@ button:hover {
             typeSpeed: 70,
         });
     </script>
+    <SCript>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </SCript>
 </body>
 
 </html>
