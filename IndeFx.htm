@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shashikanta Barik | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     /* Base Styles */
     * {
@@ -15,7 +15,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       background: #121212;
       color: #f5f5f5;
       line-height: 1.6;
@@ -110,7 +110,6 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
       transition: transform 0.5s;
       transform-style: preserve-3d;
-
     }
 
     p {
@@ -134,7 +133,6 @@
 
     .logo {
       width: 100px;
-
     }
 
     /* Resume/Experience Grid */
@@ -180,10 +178,8 @@
     }
 
     .grid1 .item1 {
-      background: url("https://dwglogo.com/wp-content/uploads/2019/03/1200px-genpact_logo.png");
       padding: 20px;
       background-color: #00d5ff25;
-
       background-size: cover;
       border-radius: 8px;
       transition: transform 0.3s;
@@ -344,6 +340,55 @@
       background-color: #0056b3;
     }
 
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover,
+    .dropbtn:focus {
+      background-color: #2980B9;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+      display: block;
+    }
 
     /* Responsive Design */
     @media (max-width: 768px) {
@@ -383,7 +428,7 @@
 <body>
   <!-- Navigation -->
   <nav>
-    <div class="left">Shashikant's Potfolio</div>
+    <div class="left" style="font-size: 2rem;">Shashikant's Potfolio</div>
     <div class="right">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -397,17 +442,20 @@
   </nav>
 
   <!-- Header / Hero Section -->
-  <hr>
-  <header style="background-color: #fffdfd1c;">
+  <hr />
+  <header style="background-color: #fffdfd1c">
     <div class="container">
-      <h1 style="color: rgb(255, 255, 255);">Shashikanta Barik</h1>
-      <p>Hi my name is <span class="purple"><b>Shashikanta</b></span> I am an experienced professional in Life
-        Insurance,Banking, and Finance with a proven track record in '<b style="color: aqua;">Quality management </b>'&
-        '<b style="color: aqua;">Process development</b>'.</p>
+      <h1 style="color: rgb(255, 255, 255)">Shashikanta Barik</h1>
+      <p>
+        Hi my name is <span class="purple"><b>Shashikanta</b></span> I am an
+        experienced professional in Life Insurance,Banking, and Finance with a
+        proven track record in '<b style="color: aqua">Quality management </b>'& '<b style="color: aqua">Process
+          development</b>'.
+      </p>
       <span id="element"></span>
     </div>
   </header>
-  <hr>
+  <hr />
 
   <!-- About Section -->
   <section id="about">
@@ -415,18 +463,39 @@
       <h2>About Me</h2>
       <div class="card">
         <img src="Img-removebg-preview-removebg-preview.png"" alt=" Profile Picture">
-        <p style="font-size: 120%; margin-left: 20px;">Hello! I am Shashikanta Barik, a seasoned professional with over
-          16 years of
-          experience in the
-          insurance, banking, and finance industries. I specialize in policy servicing, transactional
-          quality, and process optimization. I take pride in delivering high-quality work and leading
-          teams to success.</p>
+        <p style="font-size: 120%; margin-left: 20px">
+          Hello! I am Shashikanta Barik, a seasoned professional with over 16
+          years of experience in the insurance, banking, and finance
+          industries. I specialize in policy servicing, transactional quality,
+          and process optimization. I take pride in delivering high-quality
+          work and leading teams to success.
+        </p>
       </div>
     </div>
   </section>
-
+  <section id="Professional_Summary">
+    <div class="container">
+      <h2>Professional summmary</h2>
+      <div class="card">
+        <p>
+        <ul style="margin: 20px;" type="circle">
+          <li> Key expertise Includes Transactional Quality (Policy administration)/ Policy Owner’s Services &
+            Banking Loans and procurement (PR to PO).</li>
+          <li> Sales Compensations and licensing for healthcare, and part of loan audit for the Banking loan
+            process.</li>
+          <li> Sharing time-to-time feedback with the user.
+            Coordination with different departments like renewals, finance, and underwriting for optimizing
+            the TAT in catering to financial and non-financial requests through E-mails.</li>
+          <li>Strong domain knowledge in Life Insurance. Good understanding of basic principles of Policy
+            Servicing, New Business, Claims, Renewal, Underwriting, Finance, TDS, NAV, ULIP, Endowment,
+            Term, Health, Annuity & Pension Product.</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+  </section>
   <!-- Experience Section -->
-  <section id="experience" style="background-color: #1f1f1f;">
+  <section id="experience" style="background-color: #1f1f1f">
     <div class="container">
       <span class="gray">What I have done so far</span>
       <h2>Professional Experience</h2>
@@ -434,20 +503,29 @@
         <div class="item1">
           <h3>Genpact Process Developer</h3>
           <p><strong>Nov 2022 - Feb 2025</strong></p>
-          <p>Managed customer service requests, processed purchase orders, and audited large volumes of invoices for
-            Suncorp NZ Life Insurance & AU Procurement.</p>
+          <p>
+            Managed customer service requests, processed purchase orders, and
+            audited large volumes of invoices for Suncorp NZ Life Insurance &
+            AU Procurement.
+          </p>
         </div>
         <div class="item1">
           <h3>Genpact Process Developer</h3>
           <p><strong>Jan 2010 – Mar 2022</strong></p>
-          <p>Audited loan details, participated in certification teams, and ensured quality in financial processes at
-            TCF Bank and Anthem Healthcare.</p>
+          <p>
+            Audited loan details, participated in certification teams, and
+            ensured quality in financial processes at TCF Bank and Anthem
+            Healthcare.
+          </p>
         </div>
         <div class="item">
           <h3>Max Life Insurance Operation Executive</h3>
           <p><strong>Oct 2008 – Jan 2010</strong></p>
-          <p>Led quality checks, mentored associates, and managed both financial and non-financial requests across
-            multiple service channels.</p>
+          <p>
+            Led quality checks, mentored associates, and managed both
+            financial and non-financial requests across multiple service
+            channels.
+          </p>
         </div>
       </div>
     </div>
@@ -487,14 +565,15 @@
         <div class="skill-card">
           <div class="icon">💻</div>
           <h3>Technical Tools</h3>
-          <ul type="circle" style="text-align: left;">
-            <li>MS Word, Excel, PowerPoint</li>
+          <ul type="circle" style="text-align: left; padding-left:20px;">
+            <li>Microsoft Office</li>
             <li>MySQL</li>
+            <li>Ariba, PO Wizard tool,</li>
+            <li>SBA PPP, EWS, IBS, ASCS</li>
             <li>Oracle SQL Developer</li>
             <li>Ingenium, Omnidocs</li>
             <li>MyFlow, MyMoney</li>
             <li>LOS, SFDC, SharePoint, Oracle</li>
-
           </ul>
         </div>
         <div class="skill-card">
@@ -511,10 +590,22 @@
     <div class="container">
       <h2>Contact Me</h2>
       <div class="card">
-        <p>Email: <a href="mailto:shasb2016.sb@gmail.com">shasb2016.sb@gmail.com</a></p>
-        <p>Phone: +91 95609 41942</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/shashikanta-barik-936b37232/" target="_blank">View Profile</a>
+        <p>
+          Email:
+          <a href="mailto:shasb2016.sb@gmail.com">shasb2016.sb@gmail.com</a>
         </p>
+        <p>Phone: +91 95609 41942</p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/shashikanta-barik-936b37232/" target="_blank">View Profile</a>
+        </p>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Resume</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="Shashikanta_Barik_Non-Voice_CV-1 (1).pdf">View CV</a>
+            <a href="Shashikanta_Barik_Non-Voice_CV-1 (1).pdf" download="">Download CV</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -526,22 +617,45 @@
 
   <!-- Optional JavaScript for smooth scroll -->
   <script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+    document.querySelectorAll("nav a").forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
       });
     });
   </script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
-    var typed = new Typed('#element', {
-      strings: ['Economics Graduate', 'Life Insurance, Banking & Finance Expert'],
+    var typed = new Typed("#element", {
+      strings: [
+        "Economics Graduate",
+        "Life Insurance, Banking & Finance Expert",
+      ],
       typeSpeed: 70,
     });
+  </script>
+  <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
 
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+      if (!event.target.matches(".dropbtn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains("show")) {
+            openDropdown.classList.remove("show");
+          }
+        }
+      }
+    };
   </script>
 </body>
 
